@@ -1,0 +1,41 @@
+{% extends 'stock/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    <h1>{% trans 'Article' %}</h1>
+{% endblock title %}
+
+{% block body %}
+    <div class="pb-4 text-center text-lg-left">
+        <div>
+            <label>{% trans 'Code' %}: </label>
+            <br>
+            <input class="form-class" readonly="true" value="{{ object.code }}">
+        </div>
+        <div>
+            <label>{% trans 'Name' %}: </label>
+            <br>
+            <input class="form-class" readonly="true" value="{{ object.name }}">
+        </div>
+        <div>
+            <label>{% trans 'Category' %}: </label>
+            <br>
+            <input class="form-class" readonly="true" value="{{ object.category }}">
+        </div>
+        <div>
+            <label>{% trans 'Unit Price' %}: </label>
+            <br>
+            <input class="form-class" readonly="true" value="{{ object.unit_price|default_if_none:"" }}">
+        </div>
+        <div>
+            <label>{% trans 'Stock' %}: </label>
+            <br>
+            <input class="form-class" readonly="true" value="{{ object.stock }}">
+        </div>
+    </div>
+    <div>
+        <a class="btn btn-success" href="{% url 'stock:article_change' object.pk %}">{% trans 'Edit' %}</a>
+        <a class="btn btn-primary" href="{% url 'stock:article_list' %}">{% trans 'Cancel' %}</a>
+    </div>
+{% endblock %}

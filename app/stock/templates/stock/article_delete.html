@@ -1,0 +1,17 @@
+{% extends 'stock/base.html' %}
+
+{% load i18n %}
+
+{% block title %}
+    <h1>{% trans 'Delete Article' %}</h1>
+{% endblock title %}
+
+{% block body %}
+    <form method="POST">
+        {% csrf_token %}
+        <h5>{% trans 'Do you want to delete the article' %} {{ article.name }}'?'</h5>
+
+        <button class="btn btn-danger" type="submit">{% trans 'Delete' %}</button>
+        <a class="btn btn-primary" href="{% url 'stock:article_list' %}">{% trans 'Cancel' %}</a>
+    </form>
+{% endblock body %}
