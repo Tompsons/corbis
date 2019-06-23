@@ -96,8 +96,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': getenv('POSTGRES_DB', type=str, default='corbis'),
         'USER': getenv('POSTGRES_USER', type=str, default='postgres'),
-        'PASSWORD': getenv('POSTGRES_PASSWORD', type=str, default='admin'),
-        'HOST': getenv('POSTGRES_HOST', type=str, default='localhost'),
+        'PASSWORD': getenv('POSTGRES_PASSWORD', type=str, default='!Q2w3e4r%T'),
+        'HOST': getenv('POSTGRES_HOST', type=str, default='db'),
         'PORT': getenv('POSTGRES_PORT', type=int, default=5432),
     }
 }
