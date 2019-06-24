@@ -1,2 +1,5 @@
-# ignore pycharm ide
+# ignore pycharm files
 .idea/
+
+# ignore translation files
+*.mo
