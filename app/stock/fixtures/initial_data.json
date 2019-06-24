@@ -1,0 +1,23 @@
+[
+  {
+    "model": "stock.category",
+    "pk": 1,
+    "fields": {
+      "name": "Áridos"
+    }
+  },
+  {
+    "model": "stock.category",
+    "pk": 2,
+    "fields": {
+      "name": "Mampostería"
+    }
+  },
+  {
+    "model": "stock.category",
+    "pk": 3,
+    "fields": {
+      "name": "Grifería"
+    }
+  }
+]

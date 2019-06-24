@@ -2,6 +2,15 @@
 
 {% load i18n %}
 
+{% block css %}
+    <style>
+        input:required {
+            border-color: red !important;
+        }
+    </style>
+{% endblock %}
+
+
 {% block title %}
     <h1>{% trans 'Article' %}</h1>
 {% endblock title %}

@@ -11,12 +11,12 @@
         <div>
             <label>{% trans 'Code' %}: </label>
             <br>
-            <input class="form-class" readonly="true" value="{{ object.code }}">
+            <input class="form-control" readonly="true" value="{{ object.code }}">
         </div>
         <div>
             <label>{% trans 'Name' %}: </label>
             <br>
-            <input class="form-class" readonly="true" value="{{ object.name }}">
+            <input class="form-control" readonly="true" value="{{ object.name }}">
         </div>
         <div>
             <label>{% trans 'Category' %}: </label>
@@ -26,12 +26,12 @@
         <div>
             <label>{% trans 'Unit Price' %}: </label>
             <br>
-            <input class="form-class" readonly="true" value="{{ object.unit_price|default_if_none:"" }}">
+            <input class="form-control" readonly="true" value="{{ object.unit_price|default_if_none:"" }}">
         </div>
         <div>
             <label>{% trans 'Stock' %}: </label>
             <br>
-            <input class="form-class" readonly="true" value="{{ object.stock }}">
+            <input class="form-control" readonly="true" value="{{ object.stock }}">
         </div>
     </div>
     <div>
