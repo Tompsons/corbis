@@ -1,25 +1,22 @@
-Pasos para instalar entorno y ejecutar app:
-===========================================
+# Pasos para instalar entorno y ejecutar app:
 
-# Clonar repositorio
---------------------
+
+## Clonar repositorio
+
 1. `git clone https://github.com/Tompsons/corbis.git`
 2. Cambiarse al directorio *corbis*
 
-## Build
--------
+### Build
 ```
 docker-compose build
 ```
 
-## Run
------
+### Run
 ```
 docker-compose up
 ```
 
-# Migrate DB and Create User
-----------------------------
+## Migrate DB and Create User
 En una segunda terminal, ejecutar:
 ```
 docker exec -it corbis_web_1 /bin/bash
@@ -35,10 +32,8 @@ Crear el usuario administrador del sistema:
 `python manage.py createsuperuser`
 
 
-# Consola Administración de Stock
----------------------------------
+## Consola Administración de Stock
 - Abrir navegador web, y acceder a: `http://127.0.0.1:8000/`
 
-# Sitio de administración - Django-Admin
-----------------------------------------
+## Sitio de administración - Django-Admin
 - Acceder a `http://127.0.0.1:8000/admin/`
